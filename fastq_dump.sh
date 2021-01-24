@@ -2,3 +2,11 @@
 FASTQ_FILE=SRR13491098
 
 fastq-dump -I --split-files $FASTQ_FILE
+
+#sample quality control with fastqc tool
+
+fastqc *.fastq
+
+#check results
+
+firefox *.html
