@@ -1,4 +1,4 @@
-#download SARS-COV-2 whole genome sequence from NCBI to fastq format (paired end)
+#download SARS COV 2 whole genome sequence from NCBI to fastq format (paired end sample)
 FASTQ_FILE=SRR13565667
 
 fastq-dump --split-files $FASTQ_FILE
@@ -6,10 +6,10 @@ fastq-dump --split-files $FASTQ_FILE
 #sample quality control with fastqc tool
 fastqc *.fastq
 
-#check results
+#preview and check quality control results
 firefox *.html
 
-#download ref genome
+#download reference genome (from NCBI) in .fasta format
 
 #indexing the reference genome
 bwa index -p covid_19 sarscov2_refgenome.fasta
