@@ -15,7 +15,7 @@ firefox *.html
 bwa index -p covid_19 sarscov2_refgenome.fasta
 
 #perform bwa-mem alignment to reference genome
-bwa mem -M -t 8 covid SRR13565667_1.fastq SRR13565667_2.fastq > SRR13565667.sam
+bwa mem -M -t 8 covid_19 SRR13565667_1.fastq SRR13565667_2.fastq > SRR13565667.sam
 
 #use samtools to fix some issues in produced file
 samtools fixmate -O bam SRR13565667.sam SRR13565667.bam
