@@ -1,7 +1,7 @@
 #download SARS-COV-2 whole genome sequence from NCBI to fastq format (paired end)
 FASTQ_FILE=SRR13565667
 
-fastq-dump -I --split-files $FASTQ_FILE
+fastq-dump --split-files $FASTQ_FILE
 
 #sample quality control with fastqc tool
 fastqc *.fastq
