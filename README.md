@@ -1,4 +1,4 @@
-## SarsCov2-LINUX
+## Course Project LINUX - SarsCov2
 
 *This is a master's course project (LINUX) about SARS-COV2 genome.*
 
